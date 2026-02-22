@@ -3,15 +3,15 @@ from loginScript import login
 from lectEvalBot import fill_sufo_form
 from goToSufo import go_to_sufo
 from processSufoTable import process_sufo_rows
+import os
+from dotenv import load_dotenv
+import threading
 
 # Config
-USERNAME = "Place your username here"
-PASSWORD = "Place your password here"
+load_dotenv()
 
-FORMS = [
-    "https://ufuture.uitm.edu.my/sufo/questions/index/FORM_ID_1",
-    "https://ufuture.uitm.edu.my/sufo/questions/index/FORM_ID_2",
-]
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
 
 
 def main():
