@@ -1,6 +1,8 @@
 # SUFO Bot
 
-A Python automation bot using **Playwright** to fill out SuFO evaluation forms on UiTM’s uFuture portal.  
+A Python automation bot using **Playwright** to fill out SuFO evaluation forms on UiTM’s uFuture portal. 
+
+Now you might ask why, and I'll say why not, basically automates the form filling process from 5-7 minutes to basically 2 minutes max. Also I kill some time this Ramadan :P
 
 ## 📝 Features
 
