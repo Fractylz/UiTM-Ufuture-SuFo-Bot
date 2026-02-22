@@ -10,8 +10,8 @@ import threading
 # Config
 load_dotenv()
 
-USERNAME = os.getenv("USERNAME")
-PASSWORD = os.getenv("PASSWORD")
+USERNAME = os.getenv("SUFO_USERNAME")
+PASSWORD = os.getenv("SUFO_PASSWORD")
 
 
 def main():

@@ -23,7 +23,7 @@ def fill_sufo_form(page):
     #     radio_groups.nth(option_to_select).check()
 
     # Submit the form
-    submit_btn = page.locator("button[type='submit']")
+    submit_btn = page.locator("button:has-text('Submit')")
     submit_btn.click()
     page.wait_for_load_state("networkidle")
     print("Form submitted")
