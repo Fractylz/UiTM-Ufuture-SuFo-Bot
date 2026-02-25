@@ -13,4 +13,4 @@ def login(page: Page, username: str, password: str):
 
     page.wait_for_load_state("networkidle")
 
-    print("Login successful")
+    print("Logged into UFuture")
