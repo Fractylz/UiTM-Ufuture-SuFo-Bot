@@ -1,9 +1,16 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-BOT_TOKEN = "8275693340:AAE1vx5O2JSxVRNQ_le7BCKw93w5_x_Swro"
-CHAT_ID = (
-    "1922524521"  # get this from sending a message to your bot and checking getUpdates
-)
+
+# Config
+load_dotenv()
+
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv(
+    "CHAT_ID"
+)  # get this from sending a message to your bot and checking getUpdates
 
 
 def send_text(message: str):
